@@ -5,7 +5,6 @@
 package sistema.de.gestión.de.transporte.turístico;
 
 import java.util.List;
-import java.util.Scanner;
 
 /**
  *
@@ -14,7 +13,7 @@ import java.util.Scanner;
 public class lanchaTuristica extends vehiculos{
     
     String tipoMotor;
-    Scanner in = new Scanner(System.in);
+    
     public lanchaTuristica(String tipoMotor, String patente, String marca, int capacidadPasajeros, int anioFabricacion) {
         super(patente, marca, capacidadPasajeros, anioFabricacion);
         this.tipoMotor = tipoMotor;
@@ -24,9 +23,10 @@ public class lanchaTuristica extends vehiculos{
         return tipoMotor;
     }
 
-    public void setTipoMotor(int in2) {
+    public void setTipoMotor(int motor) {
         
-        switch (in2) {
+        try {
+            switch (motor) {
             case 1:
                 this.tipoMotor = "nafta";
                 break;
@@ -38,7 +38,17 @@ public class lanchaTuristica extends vehiculos{
                 break;
             default:
                 throw new AssertionError();
+        }    
+        } catch (Exception e) {
+            System.out.println("valor invalido, intentelo de nuevo");
+            System.out.println("-tipo de motor"
+                + "\n1_ NAFTA"
+                + "\n2_ DIESEL"
+                + "\n3_ ELECTRICO");
+        
+            setTipoMotor(in.nextInt());
         }
+        
         this.tipoMotor = tipoMotor;
     }
     

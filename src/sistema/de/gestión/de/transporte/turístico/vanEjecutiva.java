@@ -4,10 +4,7 @@
  */
 package sistema.de.gestión.de.transporte.turístico;
 
-import static java.lang.System.in;
-import java.time.LocalDate;
 import java.util.List;
-import java.util.Scanner;
 
 /**
  *
@@ -17,7 +14,6 @@ public class vanEjecutiva extends vehiculos{
     
     private boolean aireAcondicionado;
     private int confirmacion;
-    Scanner in = new Scanner(System.in);
 
     public vanEjecutiva(boolean aireAcondicionado, String patente, String marca, int capacidadPasajeros, int anioFabricacion) {
         super(patente, marca, capacidadPasajeros, anioFabricacion);

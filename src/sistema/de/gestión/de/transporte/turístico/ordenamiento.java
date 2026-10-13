@@ -39,15 +39,15 @@ public class ordenamiento extends SistemaDeGestiónDeTransporteTurístico {
 
             for (int j = i + 1; j < lista_comparar.size(); j++) {
 
-                List<?> comparar = (List<?>) lista_comparar.get(i);
-                List<?> siguiente = (List<?>) lista_comparar.get(j);
+                List<Object> comparar = (List<Object>) lista_comparar.get(i);
+                List<Object> siguiente = (List<Object>) lista_comparar.get(j);
 
                 int anio1 = (int) comparar.get(4);
                 int anio2 = (int) siguiente.get(4);
 
                 if (anio1 < anio2) {
 
-                    Object temp = lista_comparar.get(i);
+                    int temp = (int) lista_comparar.get(i);
 
                     lista_comparar.set(i, lista_comparar.get(j));
                     lista_comparar.set(j, temp);
@@ -68,15 +68,15 @@ public class ordenamiento extends SistemaDeGestiónDeTransporteTurístico {
 
             for (int j = i + 1; j < lista_comparar.size(); j++) {
 
-                List<?> comparar = (List<?>) lista_comparar.get(i);
-                List<?> siguiente = (List<?>) lista_comparar.get(j);
+                List<Object> comparar = (List<Object>) lista_comparar.get(i);
+                List<Object> siguiente = (List<Object>) lista_comparar.get(j);
 
                 int anio1 = (int) comparar.get(3);
                 int anio2 = (int) siguiente.get(3);
 
                 if (anio1 < anio2) {
 
-                    Object temp = lista_comparar.get(i);
+                    int temp = (int) lista_comparar.get(i);
 
                     lista_comparar.set(i, lista_comparar.get(j));
                     lista_comparar.set(j, temp);

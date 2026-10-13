@@ -4,7 +4,6 @@
  */
 package sistema.de.gestión.de.transporte.turístico;
 
-import static java.lang.System.in;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;

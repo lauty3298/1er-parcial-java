@@ -20,7 +20,6 @@ public class SistemaDeGestiónDeTransporteTurístico {
     public static void main(String[] args) {
         int menu;
         boolean bandera = true;
-        int seleccion;
         
         
         List<Object> vehiculos_disponibles = new ArrayList<>();
